@@ -1,5 +1,7 @@
 # KyberPoly2msg-DS: Kyber Decapsulation poly2msg EM Side-Channel Dataset
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22638659.svg)](https://doi.org/10.5281/zenodo.22638659)
+
 Real-hardware electromagnetic (EM) side-channel traces captured during CRYSTALS-Kyber decapsulation (pq-crystals reference implementation) on an ARM Cortex-M4 target, targeting the `poly2msg()` message-decoding step inside `K-PKE.Decrypt`.
 
 ## Acquisition parameters
@@ -44,7 +46,7 @@ data/
 
 ## Accessing the data
 
-The full dataset (~45 GB) is hosted on Zenodo: 10.5281/zenodo.22638659.
+The full dataset (~45 GB) is hosted on Zenodo: [10.5281/zenodo.22638659](https://doi.org/10.5281/zenodo.22638659).
 
 ````
 python
