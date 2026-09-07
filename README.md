@@ -63,3 +63,6 @@ with h5py.File("dataset.h5", "r") as f:
 ````
 
 traces datasets are chunked as (1000, n_samples) read in batches of that size (or multiples) for efficient I/O.
+
+A runnable version of this walkthrough that inspects the file structure, loads both partitions, and constructs the poly2msg label is provided in Tutorial-Access-Dataset.ipynb.
+
