@@ -19,14 +19,14 @@ Real-hardware electromagnetic (EM) side-channel traces captured during CRYSTALS-
 Single HDF5 file, uncompressed, chunked.
 
 data/
-├── profiling/
-│   ├── traces   (100000, 150000)  int16
-│   ├── message  (100000, 32)      uint8
-│   └── k        (100000, 32)      uint8
-└── attack/
-├── traces   (50000, 150000)   int16
-├── message  (100000, 32)*     uint8
-└── k        (100000, 32)*     uint8
+├── profiling/ <br />
+│   ├── traces   (100000, 150000)  int16 <br />
+│   ├── message  (100000, 32)      uint8 <br />
+│   └── k        (100000, 32)      uint8 <br />
+└── attack/ <br />
+├── traces   (50000, 150000)   int16 <br />
+├── message  (100000, 32)*     uint8 <br />
+└── k        (100000, 32)*     uint8 <br />
 
 
 \* attack/message and attack/k are declared at 100,000 rows, but only the first 50,000 were ever written, rows 50,000–99,999 are unallocated HDF5 chunks with no corresponding trace, read back as zero only because that's HDF5's default fill value, not stored padding. Always read attack/traces.shape[0] (50,000) first and slice to it.
